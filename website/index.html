@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taylor Swift Analysis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("taylor_Swift.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #ffffff; /* Set text color to white */
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: rgba(34, 94, 120, 0.7); /* Semi-transparent black background */
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #0021f79d;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 50px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Taylor Swift Analysis</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Taylor swift analysis </h2>
+      <h5>Select an album</h5>
+      <p>An analysis of Taylor swifts distography.</p>
+      <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <h5>US Counties:</h5>
+          <select id="selDataset2" onchange="optionChanged(this.value)"></select>
+    </section>
+
+    <section>
+      <h2>Music Videos</h2>
+      <p>Here are some links to the official music videos for "Midnights" and "Bejeweled":</p>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=...">Midnights - Music Video</a></li>
+        <li><a href="https://www.youtube.com/watch?v=...">Bejeweled - Music Video</a></li>
+      </ul>
+    </section>
+
+    </main>
+
+
+
+</body>
+</html>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="./static/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+

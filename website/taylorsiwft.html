@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taylor Swift Analysis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("taylor_Swift.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #ffffff; /* Set text color to white */
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: rgba(34, 94, 120, 0.7); /* Semi-transparent black background */
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #0021f79d;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      display: inline-block;
+      margin-right: 10px; /* Adjust margin for spacing */
+      color: #206a1d;
+    }
+
+    .dropdown:last-child { /* Remove margin for last dropdown */
+      margin-right: 0;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #00f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: rgb(135, 76, 187);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #a70000;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0; /* Add some margin for spacing */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Taylor Swift Analysis</h1>
+   
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Taylor Swift Analysis throughout the years!</h2>
+      <div class="center-container">
+        <div class="dropdown">
+          <button class="dropbtn" onchange="optionChanged(this.value)">Key</button>
+          <div class="dropdown-content">
+            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Popularity</button>
+          <div class="dropdown-content" onchange="optionChanged(this.value)">
+            </div>
+        </div>
+      </div>
+      <p>This website is an analysis of Taylor Swift's discography</p>
+      </section>
+  </main>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</body>
+</html>
+
+    
